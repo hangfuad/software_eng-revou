@@ -4,6 +4,7 @@
         box-sizing: border-box;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+    
 
     body{
         width: 100%;
@@ -31,7 +32,6 @@
     #logo span{
         color: cornflowerblue;
         font-style: oblique;
-        font-;
     }
     #navbar{
         display: flex;
@@ -73,7 +73,7 @@
         margin:0;
         padding: 1.5rem 2rem;
         width: 100%;
-
+        background-color: aliceblue;
     }
     #headlines{
         font-size: 2rem;

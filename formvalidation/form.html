@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <nav id="banner">
+            <div class="logo">
+                <a href="index.html">
+                    <p class="logo-text">mogups</p>
+                </a>
+            </div>
+            <div class="nav-button">
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#ourpackage"><li>Our Package</li></a>
+                    <a href="#callus"><li>Call Us</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div id="welcome">
+            <h2>Hi <span id="nama"></span>, welcome to website!</h2>
+            <p>Ini adalah latihan form validation pada website</p>
+        </div>
+        <div id="form-section">
+                <form class="message-form" name="message-form" onsubmit="return validateForm()">
+                    <div class="question">
+                        <label for="full-name">Nama: </label>
+                        <input type="text" name="full-name" placeholder="Your Name">
+                    </div>
+                    <div class="question">
+                        <label for="birth-date">Tanggal Lahir: </label>
+                        <input type="date" name="birth-date" placeholder="mm/dd/yyyy">
+                    </div>
+                    <div class="question">
+                        <label for="gender">Jenis Kelamin: </label>
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female">Female
+                    </div>
+                    <div class="question">
+                        <label for="messages">Pesan: </label>
+                        <textarea name="messages" id="message" cols="30" rows="3">
+                        </textarea>
+                    </div>           
+                    <button type="submit" value="submit">Submit</button>
+                </form>
+            <div id="display">
+                <p>Nama: <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan: <span id="sender-messages"></span></p>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    function replaceName(){
+        let name = prompt("Masukkan nama kamu:", "Fuadi");
+        document.getElementById("nama").innerText=name;
+    }
+    function validateForm(){
+        const name= document.forms["message-form"]["full-name"].value;
+        const birthDate= document.forms["message-form"]["birth-date"].value;
+        const gender= document.forms["message-form"]["gender"].value;
+        const messages= document.forms["message-form"]["messages"].value;
+
+        if(name == "" || birthDate == "" || gender == "" || messages==""){
+            alert("Tidak boleh ada yang kosong");
+            return false;
+        } 
+
+        setSenderUI(name, birthDate, gender, messages);
+        
+        return false;
+    }
+    function setSenderUI(name, birthDate, gender, messages){
+        document.getElementById("sender-full-name").innerHTML=name;
+        document.getElementById("sender-birth-date").innerHTML=birthDate;
+        document.getElementById("sender-gender").innerHTML=gender;
+        document.getElementById("sender-messages").innerHTML=messages;
+    }
+</script>
+</html>

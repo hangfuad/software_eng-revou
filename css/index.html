@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Mogups Travel Page</title>
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <nav id="banner">
+            <div class="logo">
+                <a href="index.html">
+                    <p class="logo-text">mogups</p>
+                </a>
+            </div>
+            <div class="nav-button">
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#ourpackage"><li>Our Package</li></a>
+                    <a href="#callus"><li>Call Us</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- main section -->
+    <main>
+        <section id="home">
+            <div class="tagline">
+                <h1>Your Trusted Travel Agent's</h1>
+                <h2>Your happiness is our happiness</h2>
+            </div>
+            <div class="home-top">
+                <div class="home-top-left">
+                    <div class="left-img slider-container">
+                        <div class="slide">
+                            <img class="img-slides" src="/asset/nathan-dumlao-oRKF_ZBJYGM-unsplash.jpg" alt="some picture">
+                        </div>
+                        <div class="slide">
+                            <img class="img-slides" src="/asset/link-hoang-UoqAR2pOxMo-unsplash.jpg" alt="some picture">
+                        </div>  
+                        <div class="slide">
+                            <img class="img-slides" src="/asset/sai-kiran-anagani-83zRhEhFMfo-unsplash.jpg" alt="some picture">
+                        </div>
+                        <div class="buttons">
+                            <button onclick="plusDivs(-1)"><</button>
+                            <button onclick="plusDivs(1)">></button>
+                        </div>
+                    </div>
+                    <div class="left-testi">
+                        <p class="testi">"Liburan jadi menyenangkan bersama Travel Agentku"</p>
+                    </div>
+                    <div class="nametag">
+                        <div class="profpic">
+                            <img src="/asset/wesley-tingey-_0sEjWfAK3Q-unsplash.jpg" alt="profpic">
+                        </div>
+                        <div class="naming">
+                            <p class="name">Florence     Hughes</p>
+                            <p class="subname">Ibu Rumah Tangga, 28</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-top-right">
+                    <div class="contact-card">
+                        <p class="contact-card-title">Contact Us</p>
+                        <p class="contact-card-subtitle">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                        <form class="message-form" name="message-form" onsubmit="return validateForm()">
+                            <label for="name">
+                                Your Name:
+                            </label>
+                            <input type="text" id="name" placeholder="First and Last Name" name="name">
+                            <label for="email">
+                                Email Address:
+                            </label>
+                            <input type="text" name="email" id="email" placeholder="example@gmail.com">
+                            <label for="interest"><p class="interest">What are you interested in?</p></label>
+                            <select id="interest" name="interest">
+                                <option hidden disabled selected  value="">Select an option</option>
+                                <option value="Lorem">Lorem</option>
+                                <option value="Ipsum">Ipsum</option>
+                                <option value="Dolor">Dolor</option>
+                            </select>
+                            <button type="submit" value="submit">
+                                SEND
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="home-bottom">
+                <p class="brief">
+                    Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefit of your service or product.
+                </p>
+                <div class="list">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                        <li>Perspiciatis minima officiis enim tenetur</li>
+                        <li>Inventore eius distinctio voluptatem</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- section our package -->
+        <section id="ourpackage">
+            <div class="ourpackage-title">
+                <p class="title-text">Our Package</p>
+            </div>
+            <div class="ourpackage-option-top">
+                <div class="option-card">
+                    <div class="card-lamp">
+                        <p class="lamp-img">*</p>
+                    </div>
+                    <div class="card-container">
+                        <p class="container-dest">Bali</p>
+                        <p class="container-sub">This description supports and extends the bullet points above.</p>
+                    </div>
+                </div>
+                <div class="option-card">
+                    <div class="card-lamp">
+                        <p class="lamp-img">*</p>
+                    </div>
+                    <div class="card-container">
+                        <p class="container-dest">Padang</p>
+                        <p class="container-sub">This description supports and extends the bullet points above.</p>
+                    </div>
+                </div>
+                <div class="option-card">
+                    <div class="card-lamp">
+                        <p class="lamp-img">*</p>
+                    </div>
+                    <div class="card-container">
+                        <p class="container-dest">Batam</p>
+                        <p class="container-sub">This description supports and extends the bullet points above.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="ourpackage-option-bottom">
+                <div class="option-card">
+                    <div class="card-lamp">
+                        <p class="lamp-img">*</p>
+                    </div>
+                    <div class="card-container">
+                        <p class="container-dest">Cirebon</p>
+                        <p class="container-sub">This description supports and extends the bullet points above.</p>
+                    </div>
+                </div>
+                <div class="option-card">
+                    <div class="card-lamp">
+                        <p class="lamp-img">*</p>
+                    </div>
+                    <div class="card-container">
+                        <p class="container-dest">Bandung</p>
+                        <p class="container-sub">This description supports and extends the bullet points above.</p>
+                    </div>
+                </div>
+                <div class="option-card">
+                    <div class="card-lamp">
+                        <p class="lamp-img">*</p>
+                    </div>
+                    <div class="card-container">
+                        <p class="container-dest">Yogyakarta</p>
+                        <p class="container-sub">This description supports and extends the bullet points above.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="callus">
+            <div class="headlines">
+                <p class="headline">Call Us Right Now Get 90% Discount!</p>
+                <p class="subhead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum deserunt odio, animi cupiditate eligendi repellendus deleniti error inventore provident.</p>
+            </div>
+            <button id="cta">CALL US</button>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+        <div id="logo">
+            <a href="index.html"><p class="logo-text">mogups</p>
+            </a>
+        </div>
+        <div id="aux">
+            <div class="aux-upper">
+                <p>Term of Service</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="aux-lower">
+                <p>@2019</p>
+                <p>Mogups</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    // Making JS auto slides
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n){
+        showDivs(slideIndex += n)
+    }
+    function showDivs(n){
+        var imgList = document.getElementsByClassName("img-slides");
+        if (n > imgList.length){
+            slideIndex = 1;
+        }
+        if (n<1){
+            slideIndex = imgList.length;
+        }
+        for (let i = 0; i<imgList.length; i++){
+            imgList[i].style.display = "none";
+            
+        }
+        imgList[slideIndex-1].style.display="block"
+        };
+    function autoSlide() {
+        setTimeout(() => {
+            plusDivs(1);
+            autoSlide();
+        }, 5000);
+    }
+
+    autoSlide();
+
+    // function validateForm
+    function validateForm(){
+        const name = document.forms["message-form"]["name"].value;
+        const email = document.forms["message-form"]["email"].value;
+        const interest = document.forms["message-form"]["interest"].value;
+        console.log(name, email, interest)
+
+        if(name == "" || email== "" || interest ==""){
+            alert("Tidak boleh ada yang kosong");
+            return false;
+        }
+        return false;
+    }
+</script>
+</html>
