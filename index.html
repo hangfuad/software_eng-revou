@@ -5,9 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Latihan</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>This is (not) my first project</p>
+    <banner id="banner">
+        <a href="index.html" id="logo"><span>M</span>og<span>U</span>ps</a>
+        <nav id="navbar">
+            <ul>
+                <a href="#home"><li>Home</li></a>
+                <a href="#ourpackage"><li>Our Package</li></a>
+                <a href="#call"><li>Call Us</li></a>
+            </ul>
+        </nav>
+    </banner>
+    <div id="container">
+        <div id="top">
+            <div id="home">
+                <p id="headlines">Your Trusted Travel Agent's</p>
+                <p id="subhead">Your happiness is our happiness</p>
+                <div id="promo">
+                    <img src="img/nathan-dumlao-oRKF_ZBJYGM-unsplash.jpg" alt="Some Picture">
+                    <div id="nametag">
+                        <p id="comment">"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</p>
+                        <img src="img/wesley-tingey-_0sEjWfAK3Q-unsplash.jpg" alt="profpic" class="profpic">
+                        <div class="name">Rayhan Fuadi</div>
+                        <div class="subtitle">Entrepeneur</div>
+                    </div>
+                </div>
+            </div>
+            <div id="ourpackage">
+                <p id="information">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe sint, harum suscipit molestias tempore natus provident placeat modi explicabo nobis nostrum laudantium corporis rem odit delectus eos necessitatibus magni odio?</p>
+                <div id="list">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur</li>
+                        <li>Perspiciatis minima officiis enim tenetur</li>
+                        <li>Inventore eius distinctio voluptatem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="contactus">
+                <p id="head">Contact Us</p>
+                <p id="subhead">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <form action="#">
+                    <label for="name"><p class="name">Your Name</p></label>
+                    <input id="name" type="text" placeholder="First and last name">
+                    <label for="email"><p class="email">Email Address</p></label>
+                    <input id="email" type="text" placeholder="example@google.com">
+                    <label for="interest"><p class="interest">What are you interested in?</p></label>
+                    <select id="interest">
+                        <option value="">Select an option</option>
+                        <option value="option1">Lorem</option>
+                        <option value="option2">Ipsum</option>
+                        <option value="option3">Dolor</option>
+                    </select>
+                    <input id="send" type="submit">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
